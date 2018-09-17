@@ -5,13 +5,18 @@
     <e p="D:\1 Labs\SPP Labs\Tracer\Tracer" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Tracer" t="IncludeRecursive">
+        <e p="Bar.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Foo.cs" t="Include" />
+        <e p="ITracer.cs" t="Include" />
+        <e p="Node.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
-        <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="Tracer.cs" t="Include" />
         <e p="Tracer.csproj" t="IncludeRecursive" />
+        <e p="TraceResult.cs" t="Include" />
       </e>
       <e p="Tracer.sln" t="IncludeFlat" />
     </e>
