@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <className>Foo</className>
+  <methodName>Main</methodName>
+  <methods>
+    <Node>
+      <className>Foo</className>
+      <methodName>MyMethod</methodName>
+      <time>208</time>
+      <methods>
+        <Node>
+          <className>Bar</className>
+          <methodName>InnerMethod</methodName>
+          <time>7</time>
+          <methods />
+        </Node>
+        <Node>
+          <className>Foo</className>
+          <methodName>MyMethod2</methodName>
+          <time>208</time>
+          <methods>
+            <Node>
+              <className>Bar</className>
+              <methodName>InnerMethod2</methodName>
+              <time>208</time>
+              <methods>
+                <Node>
+                  <className>Bar</className>
+                  <methodName>InnerMethod</methodName>
+                  <time>208</time>
+                  <methods />
+                </Node>
+              </methods>
+            </Node>
+            <Node>
+              <className>Bar</className>
+              <methodName>InnerMethod3</methodName>
+              <time>208</time>
+              <methods />
+            </Node>
+          </methods>
+        </Node>
+      </methods>
+    </Node>
+  </methods>
+</Node>

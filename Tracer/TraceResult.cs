@@ -2,7 +2,7 @@
 
 namespace Tracer
 {
-    public abstract class TraceResult
+    public class TraceResult
     {
         private string methodsName;
         private string className;

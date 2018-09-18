@@ -3,3 +3,5 @@ D:\1 Labs\SPP Labs\Tracer\Tracer\Tracer\bin\Debug\Tracer.pdb
 D:\1 Labs\SPP Labs\Tracer\Tracer\Tracer\obj\Debug\Tracer.csprojResolveAssemblyReference.cache
 D:\1 Labs\SPP Labs\Tracer\Tracer\Tracer\obj\Debug\Tracer.exe
 D:\1 Labs\SPP Labs\Tracer\Tracer\Tracer\obj\Debug\Tracer.pdb
+D:\1 Labs\SPP Labs\Tracer\Tracer\Tracer\bin\Debug\Newtonsoft.Json.dll
+D:\1 Labs\SPP Labs\Tracer\Tracer\Tracer\bin\Debug\Newtonsoft.Json.xml
