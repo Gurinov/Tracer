@@ -4,34 +4,17 @@ namespace Tracer
 {
     public class TraceResult
     {
-        private string methodsName;
-        private string className;
-        private string time;
+        private Node methodsTree;
 
-        public string getMethodsName()
+        public TraceResult(Node tree)
         {
-            return this.methodsName;
-        }
-        public string getClassName()
-        {
-            return this.className;
-        }
-        public string getTime()
-        {
-            return this.time;
+            methodsTree = tree;
         }
 
-        public void setMethodsName(string methodsName)
+        public Node getMethodsTree()
         {
-            this.methodsName = methodsName;
+            return methodsTree;
         }
-        public void setClassName(string className)
-        {
-            this.className = className;
-        }
-        public void setTime(string time)
-        {
-            this.time = time;
-        }
+        
     }
 }

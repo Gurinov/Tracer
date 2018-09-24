@@ -1,0 +1,9 @@
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Tracer.dll
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Newtonsoft.Json.dll
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Tracer.pdb
+D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Newtonsoft.Json.xml

@@ -1,21 +1,22 @@
-﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using Newtonsoft.Json;
-using Tracer.serialization;
+using System.Linq;
 
 namespace Tracer
 {
     public class Tracer : ITracer
     {
         private TraceResult _traceResult;
-        private Stopwatch _timer = new Stopwatch();
+        private List<Stopwatch> _timers = new List<Stopwatch>();
+        private int i = 0;
         public static Node tree = null;
         
         public void StartTrace()
         {
-            
             var stacktrace = new StackTrace();
+            
+            _timers.Add(new Stopwatch());
+            _timers.Last().Start();
             
             var prevframe = stacktrace.GetFrame(1);
             var method = prevframe.GetMethod();
@@ -36,12 +37,10 @@ namespace Tracer
             else
                 tree.addNode(tree, parentClassName, parentMethotName, className, methotName);
             
-            _timer.Start();
         }
 
         public void StopTrace()
         {
-            _timer.Stop();
             
             var stacktrace = new StackTrace();
             
@@ -54,16 +53,15 @@ namespace Tracer
             string methotName = method.Name;
             string className = method.ReflectedType.Name;
             
-            string time = _timer.ElapsedMilliseconds.ToString();
+            string time = _timers.Last().ElapsedMilliseconds.ToString();
+            _timers.Last().Stop();
+            _timers.Remove(_timers.Last());
             tree.setTime(tree, className, methotName, parentClassName, parentMethotName, time);
-
-            //Console.WriteLine (_timer.ElapsedMilliseconds.ToString());
         }
 
         public TraceResult GetTraceResult()
         {
-
-            return null;
+            return new TraceResult(tree);
         }
     }
 }

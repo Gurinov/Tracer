@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Евгений Гуринов\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Tracer.-626501271.00" t="ExcludeRecursive" />
-    <e p="D:\1 Labs\SPP Labs\Tracer\Tracer" t="IncludeFlat">
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="Tracer" t="IncludeRecursive">
+    <e p="C:\Users\Евгений Гуринов\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Tracer.-1311518442.00" t="ExcludeRecursive" />
+    <e p="D:\1 Labs\SPP Labs\Tracer1\Tracer" t="IncludeFlat">
+      <e p="ConsoleApplication" t="IncludeRecursive">
         <e p="Bar.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="ConsoleApplication.csproj" t="IncludeRecursive" />
         <e p="Foo.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Tracer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
         <e p="ITracer.cs" t="Include" />
         <e p="Node.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
@@ -25,6 +33,15 @@
         <e p="TraceResult.cs" t="Include" />
       </e>
       <e p="Tracer.sln" t="IncludeFlat" />
+      <e p="TracerTests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="TracerTests.cs" t="Include" />
+        <e p="TracerTests.csproj" t="IncludeRecursive" />
+      </e>
     </e>
   </component>
 </project>

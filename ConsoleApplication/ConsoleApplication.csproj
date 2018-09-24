@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C3FC7A72-5514-49CD-9C14-3712804511DF}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{F04F9C18-7FCE-423D-8138-E2A4A9FAA280}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tracer</RootNamespace>
-    <AssemblyName>Tracer</AssemblyName>
+    <RootNamespace>ConsoleApplication</RootNamespace>
+    <AssemblyName>ConsoleApplication</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,27 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net35\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ITracer.cs" />
-    <Compile Include="Node.cs" />
+    <Compile Include="Bar.cs" />
+    <Compile Include="Foo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="serialization\ISerialization.cs" />
-    <Compile Include="serialization\JsonSerialization.cs" />
-    <Compile Include="serialization\XmlSerialization.cs" />
-    <Compile Include="Tracer.cs" />
-    <Compile Include="TraceResult.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Tracer\Tracer.csproj">
+      <Project>{c3fc7a72-5514-49cd-9c14-3712804511df}</Project>
+      <Name>Tracer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

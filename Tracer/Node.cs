@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.Threading;
 
 namespace Tracer
 {
@@ -59,12 +61,11 @@ namespace Tracer
                 }
             }
         }
-
+        
         public void setTime(Node node, string className, string methotName, string parentClassName, string parentMethotName, string time)
         {
             if (node.getClassName().Equals(className) && node.getMethodName().Equals(methotName) && 
-                node.parent.getClassName().Equals(parentClassName) && node.parent.getMethodName().Equals(parentMethotName) &&
-                node.parent != null)
+                node.parent.getClassName().Equals(parentClassName) && node.parent.getMethodName().Equals(parentMethotName))
             {
                 node.time = time;
             } 

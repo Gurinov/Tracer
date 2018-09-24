@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Tracer")]
+[assembly: AssemblyTitle("ConsoleApplication")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tracer")]
+[assembly: AssemblyProduct("ConsoleApplication")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,11 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-<<<<<<< HEAD
-[assembly: Guid("872EFD15-E91F-4700-A0BE-ADE896569509")]
-=======
-[assembly: Guid("C3FC7A72-5514-49CD-9C14-3712804511DF")]
->>>>>>> Initial commit
+[assembly: Guid("F04F9C18-7FCE-423D-8138-E2A4A9FAA280")]
 
 // Version information for an assembly consists of the following four values:
 //
