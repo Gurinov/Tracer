@@ -6,18 +6,18 @@
     <Node>
       <className>Foo</className>
       <methodName>MyMethod</methodName>
-      <time>165</time>
+      <time>253</time>
       <methods>
         <Node>
           <className>Bar</className>
           <methodName>InnerMethod</methodName>
-          <time>8</time>
+          <time>46</time>
           <methods />
         </Node>
         <Node>
           <className>Foo</className>
           <methodName>MyMethod2</methodName>
-          <time>154</time>
+          <time>188</time>
           <methods>
             <Node>
               <className>Bar</className>

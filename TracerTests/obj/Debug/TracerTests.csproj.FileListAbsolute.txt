@@ -1,1 +1,2 @@
 D:\1 Labs\SPP Labs\Tracer1\Tracer\TracerTests\obj\Debug\TracerTests.csprojResolveAssemblyReference.cache
+A:\Labs\SppLabs\Tracer1\TracerTests\obj\Debug\TracerTests.csprojResolveAssemblyReference.cache

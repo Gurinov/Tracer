@@ -29,6 +29,12 @@ namespace Tracer
         {
             return this.className;
         }
+        
+        public Node getParent()
+        {
+            return this.parent;
+        } 
+        
         public string getMethodName()
         {
             return this.methodName;

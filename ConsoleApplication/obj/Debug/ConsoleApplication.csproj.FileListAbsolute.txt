@@ -7,3 +7,15 @@ D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Tracer.dll
 D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Newtonsoft.Json.dll
 D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Tracer.pdb
 D:\1 Labs\SPP Labs\Tracer1\Tracer\ConsoleApplication\bin\Debug\Newtonsoft.Json.xml
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\Tracer.dll
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\Newtonsoft.Json.dll
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\Tracer.pdb
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\Newtonsoft.Json.xml
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\nunit.framework.dll
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\nunit.framework.pdb
+A:\Labs\SppLabs\Tracer1\ConsoleApplication\bin\Debug\nunit.framework.xml

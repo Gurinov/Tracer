@@ -5,3 +5,13 @@ D:\1 Labs\SPP Labs\Tracer1\Tracer\Tracer\bin\Debug\Newtonsoft.Json.xml
 D:\1 Labs\SPP Labs\Tracer1\Tracer\Tracer\obj\Debug\Tracer.csprojResolveAssemblyReference.cache
 D:\1 Labs\SPP Labs\Tracer1\Tracer\Tracer\obj\Debug\Tracer.dll
 D:\1 Labs\SPP Labs\Tracer1\Tracer\Tracer\obj\Debug\Tracer.pdb
+A:\Labs\SppLabs\Tracer1\Tracer\obj\Debug\Tracer.dll
+A:\Labs\SppLabs\Tracer1\Tracer\obj\Debug\Tracer.pdb
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\Tracer.dll
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\Tracer.pdb
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\Newtonsoft.Json.dll
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\Newtonsoft.Json.xml
+A:\Labs\SppLabs\Tracer1\Tracer\obj\Debug\Tracer.csprojResolveAssemblyReference.cache
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\nunit.framework.dll
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\nunit.framework.pdb
+A:\Labs\SppLabs\Tracer1\Tracer\bin\Debug\nunit.framework.xml
