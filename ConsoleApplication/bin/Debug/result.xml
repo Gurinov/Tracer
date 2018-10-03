@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <className>Foo</className>
-  <methodName>Main</methodName>
-  <time>-1</time>
-  <methods>
+  <_className>Foo</_className>
+  <_methodName>MyMethod</_methodName>
+  <_time>00:00:00.0011654</_time>
+  <_methods>
     <Node>
-      <className>Foo</className>
-      <methodName>MyMethod</methodName>
-      <time>441</time>
-      <methods />
+      <_className>Foo</_className>
+      <_methodName>MyMethod</_methodName>
+      <_time>00:00:00.0010398</_time>
+      <_methods>
+        <Node>
+          <_className>Foo</_className>
+          <_methodName>MyMethod</_methodName>
+          <_time>00:00:00.0010259</_time>
+          <_methods>
+            <Node>
+              <_className>Foo</_className>
+              <_methodName>MyMethod</_methodName>
+              <_time>00:00:00.0010166</_time>
+              <_methods>
+                <Node>
+                  <_className>Foo</_className>
+                  <_methodName>MyMethod</_methodName>
+                  <_time>00:00:00.0009976</_time>
+                  <_methods>
+                    <Node>
+                      <_className>Foo</_className>
+                      <_methodName>MyMethod</_methodName>
+                      <_time>00:00:00.0009879</_time>
+                      <_methods>
+                        <Node>
+                          <_className>Foo</_className>
+                          <_methodName>MyMethod</_methodName>
+                          <_time>00:00:00.0009749</_time>
+                          <_methods>
+                            <Node>
+                              <_className>Foo</_className>
+                              <_methodName>MyMethod</_methodName>
+                              <_time>00:00:00.0009615</_time>
+                              <_methods>
+                                <Node>
+                                  <_className>Foo</_className>
+                                  <_methodName>MyMethod</_methodName>
+                                  <_time>00:00:00.0009479</_time>
+                                  <_methods>
+                                    <Node>
+                                      <_className>Foo</_className>
+                                      <_methodName>MyMethod</_methodName>
+                                      <_time>00:00:00.0009357</_time>
+                                      <_methods>
+                                        <Node>
+                                          <_className>Foo</_className>
+                                          <_methodName>MyMethod</_methodName>
+                                          <_time>00:00:00.0008735</_time>
+                                          <_methods />
+                                        </Node>
+                                      </_methods>
+                                    </Node>
+                                  </_methods>
+                                </Node>
+                              </_methods>
+                            </Node>
+                          </_methods>
+                        </Node>
+                      </_methods>
+                    </Node>
+                  </_methods>
+                </Node>
+              </_methods>
+            </Node>
+          </_methods>
+        </Node>
+      </_methods>
     </Node>
-  </methods>
+  </_methods>
 </Node>

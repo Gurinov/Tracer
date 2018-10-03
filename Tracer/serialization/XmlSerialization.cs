@@ -14,7 +14,6 @@ namespace Tracer.serialization
         {
             string dir = AppDomain.CurrentDomain.BaseDirectory;
             string fileName = "result.xml";
-            //File.WriteAllText(dir + fileName, XmlConvert.SerializeObject(node));
             
             XmlSerializer serializer = new XmlSerializer(typeof(Node));
             StreamWriter writer = new StreamWriter(dir + fileName);

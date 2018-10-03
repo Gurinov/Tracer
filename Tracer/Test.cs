@@ -23,7 +23,7 @@ namespace Tracer
         {
             _tracer = new Tracer();
             Method();
-            Assert.True(int.Parse(_tracer.GetTraceResult().getMethodsTree().methods.Last().time) >= 200);
+            Assert.True(int.Parse(_tracer.GetTraceResult().getMethodsTree()._methods.Last()._time) >= 200);
         }
         
         [Test]
@@ -31,7 +31,7 @@ namespace Tracer
         {
             _tracer = new Tracer();
             Method();
-            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree().methods.Last().methodName,"Method");
+            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree()._methods.Last()._methodName,"Method");
         }
         
         
@@ -40,7 +40,7 @@ namespace Tracer
         {
             _tracer = new Tracer();
             Method();
-            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree().methods.Last().className, "Test");
+            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree()._methods.Last()._className, "Test");
         }
         
         [Test]
@@ -48,19 +48,9 @@ namespace Tracer
         {
             _tracer = new Tracer();
             Method();
-            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree().methods.Last().getParent(), _tracer.GetTraceResult().getMethodsTree());
+            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree()._methods.Last().getParent(), _tracer.GetTraceResult().getMethodsTree());
         }
         
-        [Test]
-        public void setTime_Returned123()
-        {
-            _tracer = new Tracer();
-            Method();
-            _tracer.GetTraceResult().getMethodsTree().setTime(_tracer.GetTraceResult().getMethodsTree(),
-                    _tracer.GetTraceResult().getMethodsTree().methods.Last().className,_tracer.GetTraceResult().getMethodsTree().methods.Last().methodName,
-                    _tracer.GetTraceResult().getMethodsTree().methods.Last().getParent().className, _tracer.GetTraceResult().getMethodsTree().methods.Last().getParent().methodName, "123");
-            Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree().methods.Last().time, "123");
-        }
         
     }
 }

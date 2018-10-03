@@ -7,56 +7,38 @@ namespace Tracer
     public class Tracer : ITracer
     {
         private TraceResult _traceResult;
-        private List<Stopwatch> _timers = new List<Stopwatch>();
-        private int i = 0;
         public static Node tree = null;
+        public Dictionary<int,Node> _methodsDictionary = new Dictionary<int, Node>();
         
         public void StartTrace()
         {
             var stacktrace = new StackTrace();
             
-            _timers.Add(new Stopwatch());
-            _timers.Last().Start();
-            
             var prevframe = stacktrace.GetFrame(1);
             var method = prevframe.GetMethod();
-            var prevframe1 = stacktrace.GetFrame(2);
-            var method1 = prevframe1.GetMethod();
-            string parentMethotName = method1.Name;
-            string parentClassName = method1.ReflectedType.Name;
             string methotName = method.Name;
             string className = method.ReflectedType.Name;
 
-
+            _methodsDictionary.Add(_methodsDictionary.Count, new Node(className, methotName));
+            
             if (tree == null)
             {
-                tree = new Node(parentClassName,parentMethotName);
-                tree.getMethods().Add(new Node(className,methotName));
-                tree.setChilds(tree);
+                tree = _methodsDictionary[0];
             }
-            else
-                tree.addNode(tree, parentClassName, parentMethotName, className, methotName);
-            
         }
 
         public void StopTrace()
         {
-            
-            var stacktrace = new StackTrace();
-            
-            var prevframe = stacktrace.GetFrame(1);
-            var method = prevframe.GetMethod();
-            var prevframe1 = stacktrace.GetFrame(2);
-            var method1 = prevframe1.GetMethod();
-            string parentMethotName = method1.Name;
-            string parentClassName = method1.ReflectedType.Name;
-            string methotName = method.Name;
-            string className = method.ReflectedType.Name;
-            
-            string time = _timers.Last().ElapsedMilliseconds.ToString();
-            _timers.Last().Stop();
-            _timers.Remove(_timers.Last());
-            tree.setTime(tree, className, methotName, parentClassName, parentMethotName, time);
+            if (_methodsDictionary.Count > 1)
+            {
+                _methodsDictionary[_methodsDictionary.Count - 2].getMethods().Add(_methodsDictionary[_methodsDictionary.Count - 1]);
+                _methodsDictionary[_methodsDictionary.Count - 1].setTime();
+                _methodsDictionary.Remove(_methodsDictionary.Count - 1);   
+            }
+            else
+            {
+                _methodsDictionary[_methodsDictionary.Count - 1].setTime();
+            }
         }
 
         public TraceResult GetTraceResult()
