@@ -12,7 +12,7 @@ namespace Tracer
         {
             Tracer tracer = new Tracer();
             Foo foo = new Foo(tracer);
-            foo.MyMethod();
+            foo.MyMethod(10);
             
             JsonSerialization json = new JsonSerialization();
             json.writeToFile(Tracer.tree);
@@ -29,11 +29,12 @@ namespace Tracer
             _bar = new Bar(_tracer);
         }
     
-        public void MyMethod()
+        public void MyMethod(int i)
         {
             _tracer.StartTrace();
-            _bar.InnerMethod();
-            MyMethod2();
+            //_bar.InnerMethod();
+            if(i > 0) 
+                MyMethod(i-1);
             _tracer.StopTrace();
         }
         

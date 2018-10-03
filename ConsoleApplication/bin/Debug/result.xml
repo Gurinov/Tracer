@@ -2,45 +2,13 @@
 <Node xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <className>Foo</className>
   <methodName>Main</methodName>
+  <time>-1</time>
   <methods>
     <Node>
       <className>Foo</className>
       <methodName>MyMethod</methodName>
-      <time>253</time>
-      <methods>
-        <Node>
-          <className>Bar</className>
-          <methodName>InnerMethod</methodName>
-          <time>46</time>
-          <methods />
-        </Node>
-        <Node>
-          <className>Foo</className>
-          <methodName>MyMethod2</methodName>
-          <time>188</time>
-          <methods>
-            <Node>
-              <className>Bar</className>
-              <methodName>InnerMethod2</methodName>
-              <time>0</time>
-              <methods>
-                <Node>
-                  <className>Bar</className>
-                  <methodName>InnerMethod</methodName>
-                  <time>0</time>
-                  <methods />
-                </Node>
-              </methods>
-            </Node>
-            <Node>
-              <className>Bar</className>
-              <methodName>InnerMethod3</methodName>
-              <time>150</time>
-              <methods />
-            </Node>
-          </methods>
-        </Node>
-      </methods>
+      <time>49</time>
+      <methods />
     </Node>
   </methods>
 </Node>

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading;
 
 namespace Tracer
@@ -8,7 +9,7 @@ namespace Tracer
     {
         public string className;
         public string methodName;
-        public string time;
+        public string time = "-1";
         private Node parent = null;
 
         public List<Node> methods = new List<Node>() {};
@@ -28,6 +29,11 @@ namespace Tracer
         public string getClassName()
         {
             return this.className;
+        }
+        
+        public string getTime()
+        {
+            return this.time;
         }
         
         public Node getParent()
@@ -52,36 +58,42 @@ namespace Tracer
             }
         }
 
-        public void addNode(Node node, string parentClassName, string parentMethotName, string className, string methotName)
+        public bool addNode(Node node, string parentClassName, string parentMethotName, string className, string methotName)
         { 
-            if (node.getClassName().Equals(parentClassName) && node.getMethodName().Equals(parentMethotName))
+            if (node.getClassName().Equals(parentClassName) && node.getMethodName().Equals(parentMethotName) && (node.methods.Count > 0 && !addNode(node.methods.Last(), parentClassName, parentMethotName, className, methotName))) 
             {
                 node.methods.Add(new Node(className,methotName));
                 setChilds(node);
+                return true;
             } 
             else
             {
                 foreach (Node child in node.methods)
                 {
-                    addNode(child, parentClassName, parentMethotName, className, methotName);
+                    if(addNode(child, parentClassName, parentMethotName, className, methotName))
+                        return false;
                 }
             }
+            return false;
         }
         
-        public void setTime(Node node, string className, string methotName, string parentClassName, string parentMethotName, string time)
+        public bool setTime(Node node, string className, string methotName, string parentClassName, string parentMethotName, string time)
         {
             if (node.getClassName().Equals(className) && node.getMethodName().Equals(methotName) && 
-                node.parent.getClassName().Equals(parentClassName) && node.parent.getMethodName().Equals(parentMethotName))
+                node.parent.getClassName().Equals(parentClassName) && node.parent.getMethodName().Equals(parentMethotName) && (node.getTime().Equals("-1")))
             {
                 node.time = time;
+                return true;
             } 
             else
             {
                 foreach (Node child in node.methods)
                 {
-                    setTime(child, className, methotName, parentClassName, parentMethotName, time);
+                    if (setTime(child, className, methotName, parentClassName, parentMethotName, time))
+                        return false;
                 }
             }
+            return false;
         }
 
     }

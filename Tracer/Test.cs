@@ -51,7 +51,7 @@ namespace Tracer
             Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree().methods.Last().getParent(), _tracer.GetTraceResult().getMethodsTree());
         }
         
-        
+        /*
         [Test]
         public void setTime_Returned123()
         {
@@ -61,7 +61,7 @@ namespace Tracer
                     _tracer.GetTraceResult().getMethodsTree().methods.Last().className,_tracer.GetTraceResult().getMethodsTree().methods.Last().methodName,
                     _tracer.GetTraceResult().getMethodsTree().methods.Last().getParent().className, _tracer.GetTraceResult().getMethodsTree().methods.Last().getParent().methodName, "123");
             Assert.AreEqual(_tracer.GetTraceResult().getMethodsTree().methods.Last().time, "123");
-        }
+        }*/
         
     }
 }
