@@ -40,7 +40,7 @@ namespace Tracer
         
         public void setTime()
         {
-            _time = stopwatch.Elapsed.ToString();
+            _time = stopwatch.ElapsedMilliseconds.ToString();
             stopwatch.Stop();
         }
 

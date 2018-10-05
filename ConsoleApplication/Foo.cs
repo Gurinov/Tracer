@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Json;
 using Tracer.serialization;
 
 namespace Tracer
@@ -13,14 +16,12 @@ namespace Tracer
             Tracer tracer = new Tracer();
             Foo foo = new Foo(tracer);
             foo.MyMethod(10);
-            
-            JsonSerialization json = new JsonSerialization();
-            json.writeToFile(Tracer.tree);
-            json.writeToConsole(Tracer.tree);
-            
-            XmlSerialization xml = new XmlSerialization();
-            xml.writeToFile(Tracer.tree);
-            xml.writeToConsole(Tracer.tree);
+            string path = @"c:\Users\gurin\Desktop\";
+            Serrialization ser = new Serrialization();
+            ser.WriteTo(ser.Serialize(Tracer.tree, new DataContractJsonSerializer(typeof(Node[]))),Console.OpenStandardOutput());
+            ser.WriteTo(ser.Serialize(Tracer.tree, new DataContractSerializer(typeof(Node[]))),Console.OpenStandardOutput());
+            ser.WriteTo(ser.Serialize(Tracer.tree, new DataContractJsonSerializer(typeof(Node[]))), new FileStream(path + "data.json", FileMode.OpenOrCreate));
+            ser.WriteTo(ser.Serialize(Tracer.tree, new DataContractSerializer(typeof(Node[]))), new FileStream(path + "data.xml", FileMode.OpenOrCreate));
         }
         
         internal Foo(Tracer tracer)

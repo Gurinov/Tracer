@@ -1,8 +1,9 @@
-﻿namespace Tracer.serialization
+﻿using System.Runtime.Serialization;
+
+namespace Tracer.serialization
 {
     public interface ISerialization
     {
-        void writeToFile(Node node);
-        void writeToConsole(Node node);
+        string Serialize(Node data, XmlObjectSerializer serializer);
     }
 }
